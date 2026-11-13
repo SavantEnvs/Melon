@@ -1,0 +1,9 @@
+project: savantenvs/Melon
+target: fuzz_regexp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_regexp/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_regexp
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_regexp/fuzz_regexp.dict

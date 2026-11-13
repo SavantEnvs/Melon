@@ -1,0 +1,8 @@
+project: savantenvs/Melon
+target: fuzz_asn1
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_asn1/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_asn1
+    libfuzzer: true

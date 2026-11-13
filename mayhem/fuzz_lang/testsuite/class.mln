@@ -1,0 +1,1 @@
+Class C { a = 1; Set(v) { a = v; } } c = C(); c.Set(4);

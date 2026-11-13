@@ -1,0 +1,1 @@
+Stack = 0; s = "hello"; t = s + " world";

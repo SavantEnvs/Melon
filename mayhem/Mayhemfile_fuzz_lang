@@ -1,0 +1,9 @@
+project: savantenvs/Melon
+target: fuzz_lang
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_lang/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_lang
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_lang/fuzz_lang.dict
